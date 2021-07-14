@@ -73,6 +73,7 @@ body {
     transform: scale(1.1);
     transition: transform 2s ease-in-out;
 }
+
 /*************** Manu and Header Banner Area Styles ****************/
 header {
     background-color: #2D25A0;
