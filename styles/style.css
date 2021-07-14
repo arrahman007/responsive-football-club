@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+/*************** Common Utilities ****************/
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    
 }
 
-/*************** Common Utilities ****************/
 .button a{
     background-color: #E02C6D;
     padding: 10px 24px;
@@ -15,7 +15,64 @@ body {
     text-decoration: none;
 }
 
+.button:hover a{
+    background-image: linear-gradient(-180deg, #E02C6D, #ff76a8);
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
 
+
+.manu-items:hover  a {
+    background-image: linear-gradient(-180deg, #E02C6D, #ff76a8);
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.all-players .player:hover  {
+    transform: scale(1.1);
+    transition: transform 2s ease;
+
+}
+
+.matches:hover {
+    width: 400px;
+    padding: 50px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10%;
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+
+.news-videos:hover iframe {
+    width: 567px;
+    height: 427px;
+    border-radius: 10%;
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}   
+
+.half-width:hover img{
+    width: 556px;
+    margin-bottom: 85px;
+    margin-left: 50px;
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+.club-partner:hover  {
+    padding: 10px;
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
 /*************** Manu and Header Banner Area Styles ****************/
 header {
     background-color: #2D25A0;
@@ -45,8 +102,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
 .half-width {
@@ -57,7 +112,6 @@ nav {
 
 .heading-content {
     margin-left: 100px;
-    
 }
 
 .half-width img{
@@ -72,7 +126,7 @@ nav {
     color: white;
 }
 
-/* ---------------- */
+/**************** Main Part Style ********************/
 
 main {
     display: flex;
@@ -81,30 +135,31 @@ main {
 }
 
 
+/**************** Player List Style ********************/
+
 .all-players .player img {
     width: 300px;
     height: 256px;
+
 }
 
 .all-players {
-
+ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 26px;
     margin-top: 100px;
-
 }
 
 .player-info {
     width: 300px;
-    
 }
 
 .player {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
     margin-bottom: 27px;
-
+    overflow: hidden;
 }
 
 .player-info p {
@@ -116,7 +171,7 @@ main {
     line-height: 10px;
 }
 
-/* ---------------------- */
+/****************** Upcoming Match Area Style ***************/
 
 .upcoming-matches {
     margin-top: 150px;
@@ -133,24 +188,28 @@ main {
     text-align: center;
     font-size: 40px;
 }
+
 .upcoming-match-detail  {
     text-align: center;
     line-height: 10px;
-    
 }
+
 .upcoming-match-detail span {
     line-height: 10px;
-
-    
 }
+
 .upcoming-match-detail img {
     width: 120px;
     margin-top: 20px;
-    
 }
+
 .team {
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
+
 .teams h2 {
     text-align: center;
     font-size: 40px;
@@ -159,25 +218,13 @@ main {
 
 .team img {
     width: 86px;
-
-}
-
-.team {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-
-
 }
 
 #buy-ticket-button {
     text-align: center;
 }
 
-
-
-/* ------------------------- */
-
+/************** Highliting News Area Style ******************/
 
 .news {
     display: flex;
@@ -195,9 +242,11 @@ main {
     padding: 20px;
     margin-right: 65px;
 }
+
 .news-detail h1{
     font-size: 48px;
 }
+
 .news-detail p{
     font-size: 16px;
     color: #6C6C6C;
@@ -205,7 +254,13 @@ main {
 }
 
 
-/* ----------------- */
+/******************* Club Partner Area Style *********************/
+.club-partners h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
 .club-partner {
     box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     border-radius: 25%;
@@ -217,16 +272,10 @@ main {
 }
 
 
-.club-partners h1{
-    text-align: center;
-    margin-top: 100px;
-    font-size: 30px;
-}
 
 
-/* --------------- */
 
-
+/*********************** Footer Area Style *********************/
 
 footer {
     text-align: center;
@@ -243,22 +292,26 @@ footer {
     margin-top: 20px;
     
 }
+
 .footer-social-icon i{
     margin-left: 25px;
 }
+
 .footer-social-icon p{
     font-size: 18px;
 }
 
 
-/* ------------------
- */
+/**************************** 
+        Responsive Area
+ ****************************/
+
+/************* Mobile Responsiveness *******************/
 
  @media only screen and (max-width:688px) {
     .heading-banner {
         display: grid;
         grid-template-columns: 1fr;
-     
     }
 
     .half-width {
@@ -267,12 +320,15 @@ footer {
         align-items:center;
         margin-bottom: 50px;
    }
+
    .heading-banner {
        margin-left: -50px;
    }
+
    .half-width h1 {
        font-size: 40px;
    }
+
    .half-width img {
        width: 80%;
    }
@@ -286,7 +342,6 @@ footer {
 
    .player,   {
     width: 200px;
-    
    }
   
    .upcoming-matches {
@@ -300,6 +355,7 @@ footer {
    .upcoming-match-detail  {
        line-height: 10px;
    }
+
    .matches {
        width: 70%;
        padding: 50px;
@@ -308,9 +364,11 @@ footer {
    .team {
        padding: 20px;
    }
+
    .team h1 {
        font-size: 20px;
    }
+
    .team img {
        width: 50px;
    }
@@ -322,26 +380,22 @@ footer {
    .news {
     display: grid;
     grid-template-columns: 1fr;
-    width: 85%;
-    
+    width: 85%; 
   }
 
   .news-detail  {
       width: 100%;
       align-items: center;
-
-
   }
 
   .news-detail h1{
       text-align: center;
       font-size: 35px;
-      
   }
+
   .news-detail p{
       text-align: center;
      width: 100%;
-      
   }
 
   #watch-more-btn {
@@ -352,7 +406,6 @@ footer {
     width: 95%;
     height: 215px;
     border-radius: 5%;
-  
   }
 
   .club-partners img {
@@ -370,7 +423,33 @@ footer {
     .footer-image img {
         width: 80%;
     }
-    
+ }    
+/************* Table Responsiveness *******************/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
 
+    .heading-banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+   }
+
+   header {
+       display: inline-block;
+   }
+
+    .half-width {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-bottom: 50px;
+   }
+
+    .all-players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 26px;
+        margin-top: 100px;
+       }
+}
  
 
