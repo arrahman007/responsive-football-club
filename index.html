@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot Ball Club</title>
+    <title>Football Club</title>
     <script src="https://kit.fontawesome.com/160d626522.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -19,26 +20,30 @@
 
         <!-- Manu Area -->
 
-        <nav>
-            <div class="manu-items">
-                <a href="">Home</a>
-                <a href="">Clubs</a>
-                <a href="">World Cup 2023</a>
-                <a href="">Upcoming Matches</a>
-                <a href="">Contact</a>
-            </div>
-            <div class="button">
-                <a href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
-            </div>
-        </nav>
+        <section class="manu">
+            <nav>
+                <div class="manu-items">
+                    <a href="">Home</a>
+                    <a href="">Clubs</a>
+                    <a href="">World Cup 2023</a>
+                    <a href="">Upcoming Matches</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="button">
+                    <a href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+            </nav>
+        </section>
 
         <!-- header banner & heading area -->
 
         <div class="heading-banner">
             <div class="half-width">
-                <h1 class="header-heading">Conmebol Copa America 2021</h1>
-                <div class="button">
-                    <a href="">Watch Live <i class="fas fa-long-arrow-alt-right button"></i></a>
+                <div class="heading-content">
+                    <h1 class="header-heading">Conmebol Copa America 2021</h1>
+                    <div class="button">
+                        <a href="">Watch Live <i class="fas fa-long-arrow-alt-right button"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="half-width">
@@ -176,6 +181,35 @@
             </div>
         </section>
 
+        <!-- match schedule area -->
+        <section class="upcoming-matches">
+            <div class="section-heading">
+                <h1>Upcoming Matches</h1>
+            </div>
+            <div class="matches">
+                <div class="upcoming-match-detail">
+                    <h3>Sat, 14 Aug 2021</h3>
+                    <span>Vanue: Estadio Monumental Antonio</span>
+                    <div class="league-logo">
+                        <img src="images/league-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="teams">
+                    <div class="team">
+                        <h1>Argentina</h1>
+                        <img src="images/argentina.png" alt="">
+                    </div>
+                    <h2>VS</h2>
+                    <div class="team">
+                        <h1>Brazil</h1>
+                        <img src="images/brazil.png" alt="">
+                    </div>
+                </div>
+                <div id="buy-ticket-button" class="button">
+                    <a href="">Buy Tickets Now <i class="fas fa-ticket-alt"></i></a>
+                </div>
+            </div>
+        </section>
         <!-- News and Highlights section -->
         <section class="news">
             <div class="news-detail">
@@ -183,71 +217,36 @@
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                     duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <div class="button">
-                    <a href="">Watch Now <i class="fas fa-long-arrow-alt-right button"></i></a>
+                    <a href="">Watch More <i class="fas fa-long-arrow-alt-right button"></i></a>
                 </div>
             </div>
-            <div class="news-images">
-                <img src="images/match.png" alt="">
+            <div class="news-videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vf72LCMQeL4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </section>
 
-        <!-- match schedule area -->
-
-        <section class="matches">
-            <div class="match-heading">
-                <h1>MATCHES</h1>
-            </div>
-            <div class="match-schedule">
-                <h3><span>NEXT MATCH : </span> 18 DAYS / 17 HOURS / 27 MINS</h3>
-            </div>
-            <div class="match-detail">
-                <div class="last-match-info">
-                    <div class="winner">
-                        <h5>CHAMPIONS LEAGUE | FINAL</h5>
-                        <p>Last Match</p>
-                    </div>
-                    <div class="match-time">
-                        <p>ESTÁDIO DO DRAGÃO</p>
-                        <p>30 MAY 2021, 01:00 AM</p>
-                    </div>
-                    <div class="result">
-                        <div class="team">
-                            <img src="images/manchester-city.png" alt="">
-                            <h2>0</h2>
-                        </div>
-                        <div class="team">
-                            <img src="images/chelsea.png" alt="">
-                            <h2>0</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="last-match-info">
-                    <div class="winner">
-                        <h5>CHAMPIONS LEAGUE | FINAL</h5>
-                        <p>Last Match</p>
-                    </div>
-                    <div class="match-time">
-                        <p>ESTÁDIO DO DRAGÃO</p>
-                        <p>30 MAY 2021, 01:00 AM</p>
-                    </div>
-                    <div class="result">
-                        <div class="team">
-                            <img src="images/manchester-city.png" alt="">
-                            <h2>0</h2>
-                        </div>
-                        <div class="team">
-                            <img src="images/chelsea.png" alt="">
-                            <h2>0</h2>
-                        </div>
-                    </div>
-                </div>
+        <!-- Club Partners Area -->
+        <section class="club-partners">
+            <h1>CLUB PARTNERS</h1>
+            <div class="club-partner">
+                <img src="images/club-partners/Nike.webp" alt="">
+                <img src="images/club-partners/singha_-_footer.webp" alt="">
+                <img src="images/club-partners/sure_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/three_-_footer.webp" alt="">
+                <img src="images/club-partners/trivago_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/vitality_-_footer.webp" alt="">
+                <img src="images/club-partners/fiserv_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/go_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/hublot_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/hyundai_-_footer.webp" alt="">
+                <img src="images/club-partners/MSC_-_footer_-_trans.webp" alt="">
+                <img src="images/club-partners/yokohama-footer.webp" alt="">
             </div>
         </section>
-
     </main>
-
-
-
 
 
 

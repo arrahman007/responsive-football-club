@@ -19,6 +19,13 @@ body {
 /*************** Manu and Header Banner Area Styles ****************/
 header {
     background-color: #2D25A0;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.manu {
+    margin-top: 50px;
 }
 
 .manu-items  a {
@@ -28,26 +35,35 @@ header {
     margin-left: 20px;
 }
 
-nav, .heading-banner {
+nav {
     display: flex;
     justify-content: space-around;
-}
-
-nav {
-    /* margin-top: 50px; */
+    margin-bottom: 50px;
 }
 
 .heading-banner {
-    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
 }
 
 .half-width {
-    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.heading-content {
+    margin-left: 100px;
+    
 }
 
 .half-width img{
     width: 556px;
     margin-bottom: 85px;
+    margin-left: 50px;
 }
 
 .header-heading {
@@ -61,7 +77,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
 }
 
 
@@ -71,6 +87,7 @@ main {
 }
 
 .all-players {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 26px;
@@ -99,44 +116,62 @@ main {
     line-height: 10px;
 }
 
-.matches {
+/* ---------------------- */
+
+.upcoming-matches {
     margin-top: 150px;
 }
 
+.matches {
+    width: 400px;
+    padding: 50px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10%;
+}
 
-.match-heading {
+.section-heading h1 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 40px;
+}
+.upcoming-match-detail  {
+    text-align: center;
+    line-height: 10px;
+    
+}
+.upcoming-match-detail span {
+    line-height: 10px;
+
+    
+}
+.upcoming-match-detail img {
+    width: 120px;
+    margin-top: 20px;
+    
+}
+.team {
+    align-items: center;
+}
+.teams h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 10px;
 }
 
-.match-schedule span {
-    background-color: #E02C6D;
-    padding: 10px 24px;
-    font-size: 16px;
-    color: white;
-    margin-right: 10px;
+.team img {
+    width: 86px;
 
 }
 
-.winner {
+.team {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 50px;
 
 
 }
 
-.last-match-info {
-    line-height: 0;
-    
-}
-
-.match-detail {
-
-
-
-    
-    
-    
+#buy-ticket-button {
+    text-align: center;
 }
 
 
@@ -149,9 +184,10 @@ main {
     margin-top: 165px;
 }
 
-.news-images img {
+.news-videos iframe {
     width: 567px;
     height: 427px;
+    border-radius: 10%;
 }
 
 .news-detail {
@@ -168,15 +204,29 @@ main {
     margin-bottom: 50px;
 }
 
-.team {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
 
-
+/* ----------------- */
+.club-partner {
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 25%;
+    text-align: center;
 }
 
+.club-partner img {
+    padding: 10px;
+}
+
+
+.club-partners h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+
 /* --------------- */
+
+
 
 footer {
     text-align: center;
@@ -201,7 +251,110 @@ footer {
 }
 
 
+/* ------------------
+ */
 
+ @media only screen and (max-width:688px) {
+    .heading-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+     
+    }
 
+    .half-width {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-bottom: 50px;
+   }
+   .heading-banner {
+       margin-left: -50px;
+   }
+   .half-width h1 {
+       font-size: 40px;
+   }
+   .half-width img {
+       width: 80%;
+   }
 
+   .all-players {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 26px;
+    margin-top: 100px;
+   }
+
+   .player,   {
+    width: 200px;
+    
+   }
+  
+   .upcoming-matches {
+        align-items: center;
+        padding: 20px;
+   }
+   .upcoming-matches h1 {
+       font-size: 35px;
+   }
+
+   .upcoming-match-detail  {
+       line-height: 10px;
+   }
+   .matches {
+       width: 70%;
+       padding: 50px;
+   }
+
+   .team {
+       padding: 20px;
+   }
+   .team h1 {
+       font-size: 20px;
+   }
+   .team img {
+       width: 50px;
+   }
+
+   .upcoming-match-detail span{
+       line-height: 20px;
+   }
+
+   .news {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .news-detail  {
+      width: 50%;
+      align-items: center;
+
+  }
+
+  .news-videos iframe {
+    width: 283.5px;
+    height: 213.5px;
+    border-radius: 5%;
+  }
+
+    .manu,  .club-partners  {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+    
+    /* .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .player, .blog, .course {
+        flex-direction: column;
+        align-items: center;      
+    }
+} */
+
+ 
 
